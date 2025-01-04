@@ -120,7 +120,7 @@ elif len(map_data_list) == 0: # no heatmap data
 if video_data["graph_exist"]:
     fig, ax = plt.subplots()
     if len(map_data_list) == 1:
-        ax.plot(path_x, 100-path_y)
+        ax.plot(path_x, path_y)
     else:
         for i in range(len(path_x_list)):
             ax.plot(path_x_list[i], path_y_list[i])
